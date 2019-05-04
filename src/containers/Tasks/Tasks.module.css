@@ -1,0 +1,21 @@
+.Tasks {
+    text-align: left;
+    padding: 8px;
+    margin: 10px 4px;
+    width: 550px;
+    background-color: #edf6ed;
+    border: 1px solid #367236;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .75)
+}
+.Tasks h2 {
+    margin: 0;
+    padding: 0;
+}
+.Tasks ul {
+    list-style-type: none;
+    margin: 2px 12px;
+    padding: 0;
+}
+.Tasks ul li {
+    margin: 4px 0px;
+}
