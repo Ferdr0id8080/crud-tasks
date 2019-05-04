@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './Toolbar.module.css'
 
@@ -11,8 +12,8 @@ const toolbar = props => {
     return (
         <div className={styles.Toolbar}>
             <ul className={styles.Nav}>
-                <li className={st.join(' ')}><a href="#">Home</a></li>
-                <li className={st.join(' ')}><a href="#">Nueva tarea</a></li>
+                <li className={st.join(' ')}><Link to='/'>Tareas</Link></li>
+                <li className={st.join(' ')}><Link to="/new">Nueva tarea</Link></li>
             </ul>
         </div>
     )
