@@ -1,0 +1,41 @@
+.Toolbar {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.Nav {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+    background-color: lightgreen;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0, 0.75)
+}
+
+.Nav li.NavItem {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    border-bottom: 3px solid transparent;
+}
+
+.Nav li.NavItem:hover {
+    background-color: #9cc58b;
+    padding: 0px;
+    border-bottom: 3px solid #5e9945;
+}
+
+.Nav li.NavItem a {
+    text-decoration: none;
+    color: #276809;
+    padding: 14px 8px;
+}
+
+.active {
+    background-color: #95d17b;
+    padding: 0px;
+    border-bottom: 3px solid #355a25 !important;
+}
