@@ -1,0 +1,13 @@
+.btnPrimary {
+    width: 100%;
+    font: inherit;
+    cursor: pointer;
+    margin: 4px 0px;
+    padding: 4px;
+    border: 1px solid #03380e;
+    background-color: #d2dfd5;
+    box-sizing: border-box;
+}
+.btnPrimary:hover {
+    background-color: #b2dfbc;
+}

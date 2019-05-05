@@ -1,0 +1,18 @@
+.formInput {
+    display: flex;
+    align-items: center;
+}
+.formLabel, .formControl {
+    margin: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.formControl {
+    border: 1px solid #cfcfcf;
+    font: inherit;
+    padding: 2px 4px;
+}
+.formLabel {
+    width: 25%;
+    text-align: right;
+}
