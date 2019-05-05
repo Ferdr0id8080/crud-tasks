@@ -2,10 +2,13 @@ const express       = require('express')
 const cors          = require('cors')
 const mongoose      = require('mongoose')
 const logger        = require('morgan')
+const dotenv        = require('dotenv')
+
+dotenv.config()
 
 const app           = express()
 
-mongoose.connect('mongodb://ferdroid:elpassword@151.80.59.231:27017/crud-task-react?authSource=admin', {useNewUrlParser: true})
+mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}?authSource=${process.env.DB_AUTHSOURCE}`, {useNewUrlParser: true})
     .then(db => console.log('Database is connected'))
     .catch(err => console.log('Error connecting to the database'))
 
@@ -13,7 +16,7 @@ mongoose.connect('mongodb://ferdroid:elpassword@151.80.59.231:27017/crud-task-re
 const indexRouter = require('./routes/index')
 
 
-app.set('port', process.env.API_PORT || 3131)
+app.set('port', process.env.API_PORT)
 
 app.use(logger('dev'))
 app.use(cors())

@@ -1,7 +1,10 @@
 import axios from 'axios'
 
+const dotenv = require('dotenv')
+dotenv.config()
+
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:3131'
+    baseURL: 'http://localhost:' + process.env.REACT_APP_API_PORT
 })
 
 axiosInstance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
