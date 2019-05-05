@@ -19,3 +19,22 @@
 .Tasks ul li {
     margin: 4px 0px;
 }
+
+.tableTasks {
+    width: 100%;
+    border: 1px solid lightseagreen;
+    border-collapse: collapse;
+}
+.tableTasks thead {
+    background-color: #ceddce;
+    border: 1px solid #c0c0c0;
+}
+.tableTasks tbody {
+    font-size: .8em;
+}
+.tableTasks tbody tr td {
+    padding: 2px;
+}
+.tableTasks tbody tr {
+    border-bottom: 1px solid #c0c0c0;
+}
